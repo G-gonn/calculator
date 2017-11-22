@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "lcd";
+  src: url("lcd.ttf") format("truetype");
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font: 600 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+h1 {
+  font-family: "lcd", sans-serif;
+  text-align: center;
+  margin: 60px auto 0 auto;
+  font-size: 45px;
+  font-weight: 900;
+  min-width: 640px;
+}
+
+.calculator {
+  width: 339px;
+  background: #000000;
+  margin: 30px auto 0;
+  border-radius: 5px;
+  padding: 30px;
+  box-shadow: 10px 10px 5px 0px 
+}
+
+#screen {
+  width: 92%;
+  height: 55px;
+  font-size: 40px;
+  border-radius: 5px;
+  text-align: right;
+  background-color: white;
+  border-bottom: 1px solid gray;
+  border-left: 1px solid gray;
+  padding: 15px 4% 0;
+  overflow: hidden;
+  background-color: #657D62;
+  font-family: "lcd", sans-serif;
+}
+
+button {
+  width: 70px;
+  display: inline-block;
+  font-size: 40px;
+  margin-right: 15px;
+  border: 0;
+  background: #928F8A;
+  border-radius: 4px;
+  box-shadow: 0 4px 0 #312C29;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  outline: 0;
+  padding: 12px 20px;
+  transition: all .1s linear;
+  font-size: 18px;
+}
+
+button.last {
+  margin-right: 0;
+}
+
+button.btn-clear {
+  width: 100%;
+}
+
+.button-rows {
+  margin-top: 30px;
+}
+
+.row {
+    margin-bottom: 15px;
+}
+
+.last-down {
+  margin-bottom: 0;
+}
+
+button:active {
+  box-shadow: 0 2px 0 #312C29;
+  transform: translateY(2px);
+}
+
+/* Bouton "Clear" */
+
+button.btn-clear {
+box-shadow: 0 4px 0 rgb(35, 35, 35);
+background: #312C29;
+font-size: 18px; 
+}
+
+button.btn-clear:active {
+box-shadow: 0 2px 0 rgb(35, 35, 35);
+transform: translateY(2px);
+}
+
+/* Bouton "Egale" */
+
+button.eval {
+  box-shadow: 0 4px 0 rgb(195, 75, 0);
+  background: #D96208;
+}
+
+button.eval:active {
+  box-shadow: 0 2px 0 rgb(195, 75, 0);
+  transform: translateY(2px);
+}
